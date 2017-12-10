@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.acer.twoactivities.MainActivity">
+
+
+    <TextView
+        android:id="@+id/text_header_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:visibility="invisible"
+        android:text="@string/text_header_reply"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/text_message_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_header_reply"
+        android:visibility="invisible"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:textSize="?android:attr/textAppearanceMedium"
+        />
+
+    <Button
+        android:id="@+id/button_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/button_main"
+        android:onClick="lauchSecondActivity"
+        />
+
+    <EditText
+        android:id="@+id/editText_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/button_main"
+        android:layout_toStartOf="@+id/button_main"
+        android:layout_alignParentBottom="true"
+        android:hint="@string/editText_main"
+    />
+
+</RelativeLayout>
